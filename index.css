@@ -1,0 +1,378 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+.grid-template {
+	grid-template-rows: 82px 542px 110px 136px;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas:
+	"header header"
+	"content-container content-container"
+	"language language"
+	"footer footer";
+	display: grid;
+}
+
+.notification-circle {
+	position: absolute;
+	z-index: 1;
+	left: 371px;
+	top: 192px;
+}
+
+.header {
+background-image: linear-gradient(#4E69A2, #3A5997);
+grid-area: header;
+height: 82px;
+width: 100%;
+display:grid;
+vertical-align: middle;
+}
+
+.recent-logins {
+	/* background-color: #E9EBEE; */
+	height: 522px;
+	width: 33%;
+	margin-left: 230px;
+	margin-top: 25px;
+	text-align: left;
+}
+
+.content-container {
+	background-color: #E9EBEE;
+	grid-area: content-container;
+	height: 542px;
+	width: 100%;
+	display:flex;
+	flex-wrap: wrap;
+}
+
+.language {
+	background-color: white;
+	grid-area: language;
+	height: 110px;
+	width: 980px;
+	display: block;
+	margin-left: 230px;
+	text-align: left;
+	/* border-bottom: 1px solid #E9EBEE; */
+}
+
+.language-list {
+	font-size: 12px;
+	font-family: 'BlinkMacSystemFont';
+	color:#355899;
+	vertical-align: -82px;
+	margin-bottom: 5px;
+}
+
+.sitemap-list {
+	font-size: 12px;
+	font-family: 'BlinkMacSystemFont';
+	color:#355899;
+	vertical-align: -5px;
+}
+
+.sitemap {
+	background-color: white;
+	grid-area: footer;
+	height: 110px;
+	width: 68%;
+	display: block;
+	margin-left: 230px;
+	text-align: left;
+}
+
+.fb-logo {
+	margin-left: 230px;
+	margin-top: 30px;
+}
+
+.login-input[type=text] {
+    width: 150px;
+		height: 24px;
+		color: black;
+    box-sizing: border-box;
+		border: 1px solid black;
+		padding: 3px;
+		outline: none;
+}
+
+.signup-fn[type=text] {
+    width: 195px;
+		height: 39px;
+		color: black;
+		font-size: 18px;
+		border-radius: 5px;
+    box-sizing: border-box;
+		border: 1px solid #bdc7d8;
+		padding: 3px;
+		outline: none;
+		margin-left: 0px;
+		float: left;
+		padding: 8px 10px;
+}
+
+.signup-ln[type=text] {
+    width: 195px;
+		height: 39px;
+		color: black;
+		font-size: 18px;
+		border-radius: 5px;
+    box-sizing: border-box;
+		border: 1px solid #bdc7d8;
+		padding: 3px;
+		outline: none;
+		margin-left: 0px;
+		float: right;
+		padding: 8px 10px;
+}
+
+.signup-long[type=text] {
+		border: 1px solid #bdc7d8;
+    width: 400px;
+		height: 39px;
+		color: black;
+		font-size: 18px;
+		border-radius: 5px;
+    box-sizing: border-box;
+		border: 3px;
+		padding: 3px;
+		outline: none;
+		padding: 8px 10px;
+}
+
+.th-login {
+	color: white;
+	text-align: left;
+	font-size: 12px;
+}
+
+table.login {
+	border-spacing: 15px 0px;
+	vertical-align:middle;
+	font-family: 'BlinkMacSystemFont';
+}
+table.signup {
+	border-spacing: 0px 15px;
+	vertical-align:middle;
+	font-family: 'BlinkMacSystemFont';
+}
+
+.login-button {
+	font-family: 'BlinkMacSystemFont';
+	background-color: #4267b2;
+	border: 1px solid #29487d;
+	height: 24px;
+	border-radius: 2px;
+	color: white;
+	padding: 1px 3px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 13px;
+	cursor: pointer;
+}
+
+.footer-add-button {
+	height: 20px;
+	font-family: 'BlinkMacSystemFont';
+	width: 30px;
+	background-color: #f5f6f7;
+	border-color: #ccd0d5;
+	color: #4b4f56;
+	border-radius: 2px;
+	font-size: 15px;
+	font-weight: bold;
+	cursor: pointer;
+	text-align: center;
+}
+
+.login {
+	height: 65px;
+	width: 393px;
+	bottom: 0px;
+	grid-row: 1 / 2;
+	grid-column: 2 / 3;
+	margin-left: 50px;
+}
+
+.pw-recovery {
+	color:#9cb4d8;
+	text-align: left;
+	font-size: 12px;
+}
+
+.center {
+    line-height: 27px;
+    height: 27px;
+    text-align: center;
+}
+
+h1 {
+	font-family: 'BlinkMacSystemFont';
+	font-size: 36px;
+	font-weight: 550;
+	color: #333;
+
+}
+
+p.recent-logins-p {
+	font-family: 'BlinkMacSystemFont';
+	font-size: 19px;
+	margin-top: 5px;
+}
+
+p {
+	font-family: 'BlinkMacSystemFont';
+	font-size: 19px;
+	margin-top: 5px;
+}
+
+.add-account {
+	color: #3A5997;
+	font-family: 'BlinkMacSystemFont';
+	font-size: 19px;
+	margin-top: 5px;
+}
+
+div.polaroid {
+  width: 160px;
+  background-color: white;
+  box-shadow: 0 1px 0px 0 rgba(0, 0, 0, 0.2), 0 0px 0px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 2px 2px;
+}
+
+div.container {
+  text-align: center;
+  padding: 5px 20px;
+	height: 30px;
+	padding-bottom: 5px;
+}
+
+.recent-login-pics {
+	display:inline-flex;
+	flex-wrap: wrap;
+	margin-top: 20px;
+	justify-content: space-between;
+	width: 340px;
+}
+
+img {
+	border-radius: 2px;
+}
+
+.create-new-account {
+	z-index: 1;
+	grid-row: 2 / 3;
+	grid-column: 2 / 3;
+	width: 30%;
+	height: 542px;
+	margin-top: 25px;
+	margin-left: 100px;
+}
+
+div.birthday {
+	display:inline-flex;
+	margin-top: 10px;
+}
+
+div.gender {
+	display: inline-flex;
+	flex-wrap: wrap;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+li {
+	display: inline;
+	font-family: 'BlinkMacSystemFont';
+	font-size: 18px;
+	padding-left: 3;
+	padding-right: 10px;
+}
+
+select.bday {
+	background-color: #F8F8F8;
+	font-size: 13px;
+	height: 30px;
+}
+
+h5 {
+	font-family: 'BlinkMacSystemFont';
+	font-size: 12px;
+	margin-left: 10px;
+	color: #355899;
+}
+
+.signup-message {
+	font-family: 'BlinkMacSystemFont';
+	font-size: 11px;
+	color: #777;
+}
+
+ul {
+	list-style: none;
+}
+
+ul.language-div {
+	border-bottom: 1px solid #E9EBEE;
+	margin-bottom: 3px;
+}
+
+.div-signup {
+	margin-top: 5px;
+}
+
+.signup-button {
+	font-family: 'BlinkMacSystemFont';
+	color: white;
+	font-size: 19px;
+	font-weight: bold;
+	min-width: 194px;
+	padding: 7px 20px;
+	text-align: center;
+	background: linear-gradient(#67ae55, #578843);
+  background-color: #69a74e;
+  box-shadow: inset 0 1px 1px #a4e388;
+  border-color: #3b6e22 #3b6e22 #2c5115;
+	border-radius: 5%;
+	text-shadow: 0 1px 2px rgba(0,0,0,.5);
+	cursor: pointer;
+	outline: none;
+}
+
+.signup-button-div {
+	margin-top: 18px;
+}
+
+.signup-form {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 10px;
+}
+
+.copyright {
+	color: #737373;
+	font-size: 11px;
+	bottom: -90px;
+	left: 230px;
+	position: absolute;
+}
